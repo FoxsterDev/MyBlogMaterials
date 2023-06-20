@@ -5,6 +5,7 @@ The stable Unity production version for iOS/Android/WebGL target is **2021.3.24f
 
 **Navigation**
 - [Unity Tips](./Ready/UnityTips/UnityTips.md)
+- [Usefull materials](./Ready/UsefullMaterials/UsefullMaterials.md)
 - [Conferences for Unity Developers](./Ready/Conferences/Conferences.md)
 
 ## Draft
