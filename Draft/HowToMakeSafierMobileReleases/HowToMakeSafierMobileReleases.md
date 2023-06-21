@@ -5,36 +5,42 @@ Enhancing the release process to be more seamless and transparent is vital to en
 thereby bringing joy to your players according to your schedule. 
 From a business perspective, establishing a predictable time to market holds immense significance, particularly for activities such as CRM or marketing campaigns.
 
-relevance of all links and the info at 19 June 2023.
+relevance of all links and the info at 21 June 2023.
 
 **Overview**
 
-| App store   | Review process                                                                     | Gradual opening                                                                                                                                                          | Technical data                     | Official guids                                                                                                                   | Sandbox for tests            |
+| App store   | Review process                                                                     | Gradual opening                                                                                                                                                          | Release data                       | Official guids                                                                                                                   | Sandbox for tests            |
 |-------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|------------------------------|
 | Google      | [Link](https://developers.google.com/workspace/marketplace/about-app-review)       | [yes](https://support.google.com/googleplay/android-developer/answer/6346149?visit_id=638228478821573509-2375162816&rd=1#zippy=) - target direct percent and countries   | The richest data from your release | [Release](https://play.google.com/console/about/guides/releasewithconfidence/), [Quality](https://developer.android.com/quality) | Beta testing                 |
-| Apple store | [Link](https://developer.apple.com/app-store/review/)                              | [yes](https://developer.apple.com/help/app-store-connect/update-your-app/release-a-version-update-in-phases)  - for 7 days , not direct percent  and no target countries | Essential overview data            |                                                                                                                                  | Testflight for connect users |
-| Amazon      | [Link](https://developer.amazon.com/docs/app-submission/update-published-app.html) | yes                                                                                                                                                                      | no                                 | no                                                                                                                               | no                           |
+| Apple store | [Link](https://developer.apple.com/app-store/review/)                              | [yes](https://developer.apple.com/help/app-store-connect/update-your-app/release-a-version-update-in-phases)  - for 7 days , not direct percent  and no target countries | Essential overview data            | ?                                                                                                                                | Testflight for connect users |
+| Amazon      | [Link](https://developer.amazon.com/docs/app-submission/update-published-app.html) | [yes](https://developer.amazon.com/docs/app-submission/release-updates-in-staged-rollouts.html#advantages)  - target direct percent                                      | no                                 | no                                                                                                                               | ?                            |
 
->Gradual release is Phased release for AppStore and Stage release for Google
+>Gradual release is Phased release for AppStore and Stage release for Google and Stage roll out for Amazon
 
 **Common limitation of app stores**
 - You can not exclude directly specific players like VIP from target audience when roll out a new release.
 - You can have only one gradual production release at the same time with the full rollout release.
 - Review process usually takes about 1 day but can be up to 7 days in exceptional cases like during holidays.
-- Technical metrics came to dahsboard with delays. It can be a critical time lag to decrease affect of issues.
+- Technical metrics came to dashboard with delays. It can be a critical time lag to decrease affect of issues.
 
-I can define such directions:
-- To be compliant with the newest of app store requrements.
-- To be compliant with app store quality guidelines
+Shortly to avoid unexpected issues with a release you need to be good with:
+- To be compliant with the newest of app store requirements. Like support new Android API for Google.
+- To be compliant with app store quality guidelines.
 - To know about gradual opening.
-- To have plan B if the new version has critical issue.
+- To have ability to track your important KPI's in real time.
+- To have plan B if the new version has a critical issue.
 - Other options with excluding resubmit to store from your release process as much as possible.
 
 First of all I recommend to  understand for you what is high risked release and less risked release.
 For instance *high risked release* could include new major Unity version or Firebase update. 
 You are not able to test the change on all target devices with full OS combinations. And it is not possible to disable part of native sdk remotely. 
 In this case only production test will give you understanding about stability of the release.
-**But how to decrease of fully avoid an impact of changes on your most valuable target audience ?** 
+**But how to decrease or fully avoid an impact of changes on your most valuable target audience ?** 
+
+I recommend to separate technical and non technical changes into different releases to avoid mixing a lot of changes about everything into one release.
+If you will see bad results in your tracked KPI for a new release it would be definitely hard to find a root cause. Is it an issue with new UI or there a technical issue with pushes that freeze devices?
+Also it is good practice to make regular releases 2 per month or more. Decreasing size of new changes in one release wll reduce a chance to get unclear trouble in production
+and will increase speed to diagnostic it and apply action items.
 
 *Less risked release* will be when you can operate remotely new change list of features or some new content can be segmented or controlled dynamically and disable any unstable part of application if there happens any unexpected issues .
 
@@ -44,7 +50,7 @@ you can adjust settings and fix them remotely without resubmit of client tos tor
 testing again and waiting for review. **Review process on App store for instance sometimes can be really frustrated experience.**
 
 
-From my point of view *Google play console* can provide good advantages to make safier release than App store or Amazon store.
+From my point of view *Google play console* can provide the richest advantages to make the calmest release than App store or Amazon store.
 And you can make gradual release with target % of adoption and countries and track performance of new release. 
 Also Google provide closed testings
 >
@@ -94,9 +100,9 @@ In this case you can control speed of installs target and will collect reliable 
 
 ## general advice:
 make full rollout only when you start a new release. lets put the main target adoption of a release to 99.9% for google. it will allow you to halt rollout
-very fast in case unpected troubles in production. 
+immediately in case of unexpected troubles in production. 
 Otherwise you need to resubmit of client with new app version code to be accepted by store and pass the review again. When critical bug in production happens
-and you could not decrease impact immediately by a remote option it make sense.
+and you could not decrease impact of an issue immediately by a remote option it makes sense.
 
 ## general advice:
 make final smoke QA check before opening of the app on builds downloaded from stores(testflight , not distributed as a bundle or apk. for instance some functionalyt can be triggered only from store builds
