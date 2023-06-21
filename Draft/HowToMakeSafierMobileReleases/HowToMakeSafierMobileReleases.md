@@ -9,11 +9,11 @@ relevance of all links and the info at 21 June 2023.
 
 **Overview**
 
-| App store   | Review process                                                                     | Gradual opening                                                                                                                                                          | Release data                       | Official guids                                                                                                                   | Sandbox for tests            |
-|-------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| Google      | [Link](https://developers.google.com/workspace/marketplace/about-app-review)       | [yes](https://support.google.com/googleplay/android-developer/answer/6346149?visit_id=638228478821573509-2375162816&rd=1#zippy=) - target direct percent and countries   | The richest data from your release | [Release](https://play.google.com/console/about/guides/releasewithconfidence/), [Quality](https://developer.android.com/quality) | Beta testing                 |
-| Apple store | [Link](https://developer.apple.com/app-store/review/)                              | [yes](https://developer.apple.com/help/app-store-connect/update-your-app/release-a-version-update-in-phases)  - for 7 days , not direct percent  and no target countries | Essential overview data            | ?                                                                                                                                | Testflight for connect users |
-| Amazon      | [Link](https://developer.amazon.com/docs/app-submission/update-published-app.html) | [yes](https://developer.amazon.com/docs/app-submission/release-updates-in-staged-rollouts.html#advantages)  - target direct percent                                      | no                                 | no                                                                                                                               | ?                            |
+| App store   | Review process                                                                     | Gradual opening                                                                                                                                                          | Release data                       | Official guids                                                                                                                   |
+|-------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Google      | [Link](https://developers.google.com/workspace/marketplace/about-app-review)       | [yes](https://support.google.com/googleplay/android-developer/answer/6346149?visit_id=638228478821573509-2375162816&rd=1#zippy=) - target direct percent and countries   | The richest data from your release | [Release](https://play.google.com/console/about/guides/releasewithconfidence/), [Quality](https://developer.android.com/quality) |
+| Apple store | [Link](https://developer.apple.com/app-store/review/)                              | [yes](https://developer.apple.com/help/app-store-connect/update-your-app/release-a-version-update-in-phases)  - for 7 days , not direct percent  and no target countries | Essential overview data            | ?                                                                                                                                |
+| Amazon      | [Link](https://developer.amazon.com/docs/app-submission/update-published-app.html) | [yes](https://developer.amazon.com/docs/app-submission/release-updates-in-staged-rollouts.html#advantages)  - target direct percent                                      | no                                 | no                                                                                                                               |
 
 >Gradual release is Phased release for AppStore and Stage release for Google and Stage roll out for Amazon
 
@@ -31,18 +31,21 @@ Shortly to avoid unexpected issues with a release you need to be good with:
 - To have plan B if the new version has a critical issue.
 - Other options with excluding resubmit to store from your release process as much as possible.
 
-First of all I recommend to  understand for you what is high risked release and less risked release.
+# How risky is your release?
+That is really crucial to  understand when you able to determine is high risked release or less risked release. Understanding of risks for a new release will help
+to choose the best strategy for gradual opening with risks mitigations.
+
 For instance *high risked release* could include new  Unity version. 
 You are not able to test the change on all target devices with full OS combinations. And it is not possible to disable part of native sdk remotely. 
 In this case only production test will give you understanding about stability of the release.
 **But how to decrease or fully avoid an impact of changes on your most valuable target audience ?** 
 
+*Less risked release* will be when you can operate remotely new change list of features or some new content can be segmented or controlled dynamically and disable any unstable part of application if there happens any unexpected issues .
+
 I recommend to separate technical and non technical changes into different releases to avoid mixing a lot of changes for big period of development into one release.
 If you will see bad results in your tracked KPI for a new release it would be definitely hard to find a root cause. Is it an issue with new UI or there a technical issue with pushes that freeze devices?
 Also it is good practice to make regular releases 2 per month or more. Decreasing size of new changes in one release wll reduce a chance to get unclear trouble in production
 and will increase speed to diagnostic it and apply action items.
-
-*Less risked release* will be when you can operate remotely new change list of features or some new content can be segmented or controlled dynamically and disable any unstable part of application if there happens any unexpected issues .
 
 ## general advice:
 make any significant changes in client are remotely operated as much as possible with new bundles or dynamic configs and if something will go wrong
