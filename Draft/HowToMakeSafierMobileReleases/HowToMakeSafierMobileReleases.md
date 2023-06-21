@@ -32,12 +32,12 @@ Shortly to avoid unexpected issues with a release you need to be good with:
 - Other options with excluding resubmit to store from your release process as much as possible.
 
 First of all I recommend to  understand for you what is high risked release and less risked release.
-For instance *high risked release* could include new major Unity version or Firebase update. 
+For instance *high risked release* could include new  Unity version. 
 You are not able to test the change on all target devices with full OS combinations. And it is not possible to disable part of native sdk remotely. 
 In this case only production test will give you understanding about stability of the release.
 **But how to decrease or fully avoid an impact of changes on your most valuable target audience ?** 
 
-I recommend to separate technical and non technical changes into different releases to avoid mixing a lot of changes about everything into one release.
+I recommend to separate technical and non technical changes into different releases to avoid mixing a lot of changes for big period of development into one release.
 If you will see bad results in your tracked KPI for a new release it would be definitely hard to find a root cause. Is it an issue with new UI or there a technical issue with pushes that freeze devices?
 Also it is good practice to make regular releases 2 per month or more. Decreasing size of new changes in one release wll reduce a chance to get unclear trouble in production
 and will increase speed to diagnostic it and apply action items.
@@ -83,13 +83,13 @@ Lets see 2 strategies to mitigate production incidents with risky changes in rel
 ## important advice:
 You have to compare KPI metrics between same countries and installs of same days and volume. 
 You can make wrong decisions about stability a version when you compare 
-a metric from version woth 5k of sessions with a version with 1M sessions. or you would like to compare D2 for Vietnam location with USA.
+a metric from version with 5k of sessions with a version with 1M sessions or to compare D2 for Vietnam location with USA D2.
 Ideally you should take USA organic installs for last 2 days from the newest version and compare USA organic installs for last 2 days from the previous release.
 
 
 Some advises for choosing Low tier countries 
 - No big revenue impaction
-- Enough installs with reasanable adoption speed. If It is provide 100 installs for 1 week it is too long and not enough data to make any decision.
+- Enough installs with reasonable adoption speed. If It is provide 100 installs for 1 week it is too long and not enough data to make any decision.
 - Good variety of available devices with different models and different operation system. I could remember few cases when on some regions you get analytics and issues that is not corelated with other part of world. like most devices in Nepal are Vivo
 
 The main reason to define low tier countries are to collect enough technical metrics to be sure that changes are safier and you continue 
@@ -106,7 +106,7 @@ and you could not decrease impact of an issue immediately by a remote option it 
 
 ## general advice:
 make final smoke QA check before opening of the app on builds downloaded from stores(testflight , not distributed as a bundle or apk. for instance some functionalyt can be triggered only from store builds
-like google refferer api otherwise tou can miss the technical issues and be frustrated in production for real players. 
+like google referer api otherwise tou can miss the technical issues and be frustrated in production for real players. 
 
 # features to take a look
 [Google Custom store listings](https://support.google.com/googleplay/android-developer/answer/9867158?visit_id=638228524369380759-314294836&rd=1)
