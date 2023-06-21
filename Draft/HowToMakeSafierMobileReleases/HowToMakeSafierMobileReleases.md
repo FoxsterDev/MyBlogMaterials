@@ -43,13 +43,15 @@ In opposite logic of defining high risks in a release
 *Less risked * will be when you can operate remotely new changes or some new content can be segmented or controlled dynamically and disable any unstable part of application if there happens any unexpected issues .
 
 **But how to decrease or fully avoid an impact of risky changes on your most valuable target audience ?**
+That is the main important bullet to define ** your tracked KPI's of release ** and have clear source to check and compare them with the previous release.
 
-I recommend to separate technical and non technical changes into different releases to avoid mixing a lot of changes for big period of development into one release.
-And depending on risks to plan your releases without hurry.  And tests your risky changes on less valuable target audience.
-That is the second important bullet to define ** your tracked KPI's of release ** and have clear source to check and compare them with the previous release. 
-Google provide really good dashboard with valuable info, AppStore of Apple less and Amazong says lets use your own systems or thirparties.
-
+Next I recommend to separate technical and non technical changes into different releases to avoid mixing a lot of changes for big period of development into one release.
 If you will see bad results in your tracked KPI for a new release it would be definitely hard to find a root cause. Is it an issue with new UI or there a technical issue with pushes that freeze devices?
+My proposal to set a goal at least don't degrade the metrics. Because accumulative effect of changes for few releases at line will make impossible to detect a right root cause of degradation some metric.
+
+Depending on risks to plan your releases without hurry and tests your risky changes on less valuable target audience.
+From my personal experience  Google provide the best dashboard with valuable info for release, AppStore of Apple less and Amazong says lets use your own systems or thirdparties.
+
 Also it is good practice to make regular releases 2 per month or more. Decreasing size of new changes in one release wll reduce a chance to get unclear trouble in production
 and will increase speed to diagnostic it and apply action items.
 
