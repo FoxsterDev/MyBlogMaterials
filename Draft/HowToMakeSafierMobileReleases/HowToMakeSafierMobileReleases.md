@@ -32,17 +32,23 @@ Shortly to avoid unexpected issues with a release you need to be good with:
 - Other options with excluding resubmit to store from your release process as much as possible.
 
 # How risky is your release?
-That is really crucial to  understand when you able to determine is high risked release or less risked release. Understanding of risks for a new release will help
-to choose the best strategy for gradual opening with risks mitigations.
-
-For instance *high risked release* could include new  Unity version. 
-You are not able to test the change on all target devices with full OS combinations. And it is not possible to disable part of native sdk remotely. 
+That is really crucial to determine is high risked release or less risked release. Understanding of risks for a new release will help
+to choose the best strategy for gradual opening with risks mitigations. 
+Any changes in the build without remote configuring options will increase the risks. Due the logic when yup update Unity for example or include native changes
+that can not be disabled by remote or segment it will add risks and one way to fix it will be release a hot fix and hope for fast users update.
+Or you are not able to test the change on all target devices with full OS combinations. 
 In this case only production test will give you understanding about stability of the release.
-**But how to decrease or fully avoid an impact of changes on your most valuable target audience ?** 
 
-*Less risked release* will be when you can operate remotely new change list of features or some new content can be segmented or controlled dynamically and disable any unstable part of application if there happens any unexpected issues .
+In opposite logic of defining high risks in a release
+*Less risked * will be when you can operate remotely new changes or some new content can be segmented or controlled dynamically and disable any unstable part of application if there happens any unexpected issues .
+
+**But how to decrease or fully avoid an impact of risky changes on your most valuable target audience ?**
 
 I recommend to separate technical and non technical changes into different releases to avoid mixing a lot of changes for big period of development into one release.
+And depending on risks to plan your releases without hurry.  And tests your risky changes on less valuable target audience.
+That is the second important bullet to define ** your tracked KPI's of release ** and have clear source to check and compare them with the previous release. 
+Google provide really good dashboard with valuable info, AppStore of Apple less and Amazong says lets use your own systems or thirparties.
+
 If you will see bad results in your tracked KPI for a new release it would be definitely hard to find a root cause. Is it an issue with new UI or there a technical issue with pushes that freeze devices?
 Also it is good practice to make regular releases 2 per month or more. Decreasing size of new changes in one release wll reduce a chance to get unclear trouble in production
 and will increase speed to diagnostic it and apply action items.
