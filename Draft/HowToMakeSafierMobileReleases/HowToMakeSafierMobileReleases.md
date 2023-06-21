@@ -86,8 +86,7 @@ You can make wrong decisions about stability a version when you compare
 a metric from version with 5k of sessions with a version with 1M sessions or to compare D2 for Vietnam location with USA D2.
 Ideally you should take USA organic installs for last 2 days from the newest version and compare USA organic installs for last 2 days from the previous release.
 
-
-Some advises for choosing Low tier countries 
+How to choose Low tier countries: 
 - No big revenue impaction
 - Enough installs with reasonable adoption speed. If It is provide 100 installs for 1 week it is too long and not enough data to make any decision.
 - Good variety of available devices with different models and different operation system. I could remember few cases when on some regions you get analytics and issues that is not corelated with other part of world. like most devices in Nepal are Vivo
@@ -95,7 +94,7 @@ Some advises for choosing Low tier countries
 The main reason to define low tier countries are to collect enough technical metrics to be sure that changes are safier and you continue 
 rollout on other countries.
 
-Less safiest option but from analytics the most reliable option it is start gradual opening for all world countries from 5%-10%. Depends on installs and update trend of your product.
+Less safest option but from analytics the most reliable option it is start gradual opening for all world countries from 5%-10%. Depends on installs and update trend of your product.
 In this case you can control speed of installs target and will collect reliable analytics.
 
 ## general advice:
