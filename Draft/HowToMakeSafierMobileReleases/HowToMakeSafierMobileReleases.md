@@ -94,7 +94,7 @@ Next define some tracked KPI metrics and  potencial third parties:
 Lets see 2 strategies for High risked and Low risked release.
 
 **Strategy A**
-![](./High_risked_release.png)
+![](./High_risked_release2.png)
 
 **Strategy B starting gradual release from low tier countries**
 - Starting from Google stage roll out from acceptable percent 10% depending on DAU of target audience and low tier countries
