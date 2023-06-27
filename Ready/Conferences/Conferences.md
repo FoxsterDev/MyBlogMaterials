@@ -1,13 +1,17 @@
 
 
-Missing a conference, seeing an issue or something needs an update? Send a pull request to the [Github repository]().
+`Missing a conference, seeing an issue or something needs an update? Send a pull request to the [Github repository]().
 
-| **Conference**                          | Location  | Online | **(Expected) Date** |
-|-----------------------------------------|-----------|--------|---------------------|
-| [Unite](https://unity.com/events/unite) | Amsterdam | No     | November 15-16      |
-| [DevGamm](https://devgamm.com/)         | Vilnius   | No     | June 20-21          |
-| [DevTernity](https://devternity.com/)   |           | Yes    | December 7-8        |
-|                                         |           |        |                     |
+| **Conference**                                                                        | Location      | **(Expected) Date** |
+|---------------------------------------------------------------------------------------|---------------|---------------------|
+| [Unite](https://unity.com/events/unite)                                               | Amsterdam     | November 15-16      |
+| [DevGamm](https://devgamm.com/)                                                       | Vilnius       | June 20-21          |
+| [DevTernity](https://devternity.com/)                                                 | Online        | December 7-8        |
+| [Hyper Casual](https://hgconf.com/)                                                   | Warsaw        | July 7              |
+| [Crypto hackaton](https://chain.link/hackathon#schedule)                              | Online        | April 28 - June 9   |
+| [Game Camp Light](https://www.gamecamp.io/event/gamecamp-light-7-on-27th-june-2023/)  | Warsaw/Online | June 27             |
+|                                                                                       |               |                     |
+`
 
 
 **Looking for more conferences?:**
