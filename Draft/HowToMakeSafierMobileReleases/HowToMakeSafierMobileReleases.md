@@ -93,7 +93,7 @@ Next define some tracked KPI metrics and  potencial third parties:
 
 Lets see 2 strategies for High risked and Low risked release.
 
-**Strategy for High risked release**
+**Strategy A**
 ![](./High_risked_release.png)
 
 **Strategy B starting gradual release from low tier countries**
