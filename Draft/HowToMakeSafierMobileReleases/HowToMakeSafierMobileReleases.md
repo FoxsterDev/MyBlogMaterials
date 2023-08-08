@@ -173,46 +173,14 @@ And from my experience that is easier to break something and spend to much time 
 
 # In Conclusion
 
-Store roll out is the most important stage of release process. And until you have full roll out on all your supported platforms your version is in progress yet.
-Roll out strategies can help to mitigate risks with new changes and to allow you decrease chances of loosing the most valuable audience of your products. 
-Right core roll out strategy will help easily to add new Android based stores like Samsung Galaxy Store or Amazon or Huawei AppGalery.
+The store rollout is a big deal in the release process. 
+Until your version is available on all platforms, it's still a work in progress. 
+Rollout strategies help reduce risks with new changes and prevent losing your most important product audience.
+A right rollout strategy also makes it easy to add new app stores like Samsung Galaxy Store, Amazon, or Huawei AppGallery.
 
-There is not silver bullet how to make ideal release for everyone. It needs to take into account so many parameters but I hope these proposals wil help to improve your roll outs.
-Looking forward to your thoughts in the comments.
+Remember, there's no one perfect strategy to launch new release for everyone. It's a complex process that depends on many things. 
+These suggestions should help you make your rollouts better or to take look differently.
 
-Good luck with your releases!
+I'm looking forward to hearing your thoughts in the comments.
 
-
-
-
-
-
-
-
-
-
-
-- Have ability with the lowest latency to compare the KPI of the new version with the previous one and have ability to evaluate impact of an issue from UX and in general.
-
-
-
-Depending on risks to plan your releases without hurry and tests your risky changes on less valuable target audience.
-From my personal experience  Google provide the best dashboard with valuable info about a release, AppStore of Apple less and Amazong says lets use your own systems or thirdparties.
-
-Also it is good practice to make regular releases 2 per month or more. Decreasing size of new changes in one release wll reduce a chance to get unclear trouble in production
-and will increase speed to diagnostic it and apply action items for fixing or reducing impaction.
-
-## general advice:
-make any significant changes in client are remotely operated as much as possible with new bundles or dynamic configs and if something will go wrong
-you can adjust settings and fix them remotely without resubmit of client tos tore. In resubmit you should rely on fast stable rebuild client, it can have dependance on content rebuild,
-testing again and waiting for review. **Review process on App store for instance sometimes can be really frustrated experience.**
-
-From my point of view *Google play console* can provide the richest advantages to make the calmest release than App store or Amazon store.
-And you can make gradual release with target % of adoption and countries and track performance of new release.
-Also Google provide closed testings
->
->With [closed testing](https://play.google.com/console/about/closed-testing/), you can create 1 or more closed testing tracks to test pre-release versions of your app with your own groups of testers
-
->As a Play Partner, you also receive these benefits:
->Generate access codes to give users easy access to closed tests without collecting their email addresses
->Invite selected pre-registered users into a closed test with pre-registration testing. Go to the Pre-registration page to find out how.
+Wishing you the best of luck with your releases!
