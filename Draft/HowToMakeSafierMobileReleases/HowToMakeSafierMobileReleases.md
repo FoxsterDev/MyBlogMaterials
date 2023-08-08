@@ -156,11 +156,6 @@ and you could not decrease impact of an issue immediately by a remote option it 
 Make final smoke QA check before opening of the app on builds downloaded from stores(testflight , not distributed as a bundle or apk. Because some game functionality can be triggered only from store builds.
 Like google referer api otherwise you can miss the technical issues and be frustrated in production with real players. 
 
-## One more thing where you have to be in touch with store changes to avoid unxpected troubles during app review:
-- To be compliant with the newest of app store requirements. Like support new Android API for Google or Tracking policy from Apple.
-- To be compliant with App Store Quality Guidelines. Actually it is good for potential featuring and get more organic install, but you decrease a chance for declining version.
-- To have options with excluding resubmit to store from your release process as much as possible. It can be asset bundle content or dynamic upload your product.
-
 ## Avoid mixing technical and non technical changes in one release
 I recommend to separate technical and non technical changes into different releases to avoid mixing a lot of changes for big period of development into one release.
 If you will see bad results in your tracked KPI for a new release it would be definitely hard to find a root cause. Is it an issue with new reskined UI or there a technical issue with pushes that freeze devices?
@@ -178,6 +173,12 @@ And from my experience that is easier to break something and spend to much time 
 - Around $5 billion dollars of revenue will be generated in stores outside of China.
 - Third-party app marketplaces are growing faster than the Google Play store.
 - The Unity Distribution Portal already reaches 1 billion+ players connected to these stores.
+
+
+# One more thing where you have to be in touch with store changes to avoid unxpected troubles during app review:
+- To be compliant with the newest of app store requirements. Like support new Android API for Google or Tracking policy from Apple.
+- To be compliant with App Store Quality Guidelines. Actually it is good for potential featuring and get more organic install, but you decrease a chance for declining version.
+- To have options with excluding resubmit to store from your release process as much as possible. It can be asset bundle content or dynamic upload your product.
 
 # In Conclusion
 
