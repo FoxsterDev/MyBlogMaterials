@@ -2,7 +2,7 @@
 
 Missing something important related to Unity, seeing an issue or something needs an update? Send a pull request to the [Github repository](https://github.com/FoxsterDev/MyBlogMaterials).
 
-Unity useful packages
+Unity useful resources
 
 | **Resource**                                                                                                                                 | About                                                                                         |
 |---------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -13,32 +13,21 @@ Unity useful packages
 | [UnityHeapExplorer](https://github.com/pschraut/UnityHeapExplorer)                                                                          | Heap Explorer is a Memory Profiler, Debugger and Analyzer for Unity.                          |
 | [Unity how to](https://unity.com/how-to)                                                                                                    | Access this series of how-to articles, e-books, and other resources – written for creators    |
 
-Personal Blogs
-- [Steven Yau](https://stevenyau.co.uk/)
+Personal Blogs 
 
-Learning&Educational
--
+- [Steven Yau](https://stevenyau.co.uk/)
+- [Mark Seemann](https://blog.ploeh.dk/tags/)
+
+ Learning Educational
+
 | **Resource**                                                                                                                                 | About             |
 |----------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
 | [Refactoring Guru](https://refactoring.guru/design-patterns)                                                                                 | Design patterns   |
 | [Awesome Learn Gamedev](https://github.com/notpresident35/awesome-learn-gamedev)                                                             |                   |
 | [Unity3D - Personal Notebook](https://docs.google.com/document/d/1-EFSFLf8bJTZq60kwLzHBOTnb9nv6_Oelu5ho6J_-uI/edit#heading=h.qolyg3va2zkn)   |                   |
 
-What the latest interesting read and could recommend
 
-| **Resource**                                                                                                                                                       | Tags                                         | My thoughts                                                                                                                                                                                                                                                                                   |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Build your GitHub public profile like a pro in 10 steps](https://medium.com/nerd-for-tech/build-your-github-public-profile-like-a-pro-in-10-steps-552876aa26c9)  |                                              |                                                                                                                                                                                                                                                                                               |
-| [Custom Meshes in UI ](https://www.patreon.com/posts/69499068)                                                                                                    |                                              |                                                                                                                                                                                                                                                                                               |
-| [Tips For Starting a Multiplatform Game](https://resources.unity.com/games/ready-set-ship-multiplatform-roundtable)                                               | Unity , Multiplatform                        |                                                                                                                                                                                                                                                                                               |
-| [MOBILE OPTIMIZATION TIPS FOR TECHNICAL ARTISTS - PART ](https://unity.com/how-to/mobile-game-optimization-tips-part-1)                                           | Unity Mobile Optimization                    |                                                                                                                                                                                                                                                                                               |
-| [Creating A Github Action to Tag Commits](https://itnext.io/creating-a-github-action-to-tag-commits-2722f1560dec)                                                 | Github action                                |                                                                                                                                                                                                                                                                                               |
-| [Unity Tutorial: Creating Your Own Custom Unity Package in Git](https://www.youtube.com/watch?v=31D46795veE)                                                      | Unity Package Manager                        |                                                                                                                                                                                                                                                                                               |
-| [How agility enhances software architecture](https://www.agile-meets-architecture.com/essays/how-agility-enhances-software-architecture)                          | Software architecture                        | Good architecture meets its QARs over its lifetime, a lot of quick wins can be Victoria pyrrhica, <br/> , any architect decision will be undone in future to make it is easy to undone or rework lets make isolated needs components , architecture of software is set of architect decisions |
-| [Struct & Enum Performance tips in Unity](https://somasim.com/blog/2015/08/07/c-performance-tips-for-unity-part-2-structs-and-enums/)                             | Unity, C#, Performance                       | Depending how are you going to use enum in your code it make sense to replace by them struct. <br/>And to implement interfaces for struct  IEquatable, and override Equals() and GetHashCode()                                                                                                |
-| [PlayKids uses price localization to boost revenue by over 220%](https://play.google.com/console/about/playkids-casestudy/)                                       | Monetization, Google Store, Increase Revenue | Actually good idea to adjust prices by using understanding level of cost in country,<br/> big mac is good indication. ML solution as well Wappier to take a look                                                                                                                              |
-| [Stencil Buffers](https://www.ronja-tutorials.com/post/022-stencil-buffers/)                                                                                      | Unity, Shaders                               |                                                                                                                                                                                                                                                                                               |
-
-Game Dev Jobs Info
+Game Dev Jobs 
 - [UK & Ireland Game Industry Salary Spreadsheet (Public)](https://docs.google.com/spreadsheets/d/1c6MDGzt3gCKMYzEA77vmSZNxHnd1CqeNs8W0xJ-Zss0/edit#gid=0)
 - [Technical Interview Preparation](https://docs.google.com/document/d/1GEy-tPO048rsg4XNS_f-jiHZWYlH6gXAUJ_v7PoUynA/edit)
+- [ingamejob.com](https://pl.ingamejob.com/en/jobs)
