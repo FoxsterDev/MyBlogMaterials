@@ -1,16 +1,21 @@
 # How To Make Safer Mobile Roll out Releases
 
-App stores have a essential influence on the release process. To prevent frustration, it is crucial to consider their specific flow and see how they operate. 
-Enhancing the release process to be more seamless and transparent is vital to ensure timely delivery of new content and features, 
-thereby bringing features to your players according to your schedule. 
-From a business perspective, establishing a predictable time to market holds great value, particularly for activities such as CRM or marketing campaigns.
+Have you had cases when you stopped your release to fix critical bug in production and release hot fixes? 
+Nothing pleasant when it happens for the whole studio. This is especially crucial for business activities linked with CRM/LifeOps operations or marketing campaigns.
+
+Apple and Google stores give you ability to make gradual releases that helps to mitigate risks with rollout of a new version.
+Of course the gradual approaches a not significant different from each other but main concepts are similar.
+Making the release process smooth and clear is important to give players new stuff on time with less risks.
+
+Let's see how you could modify your roll out strategy to decrease impact of potential risks in production.
+
 
 **Overview**
 
-| App store   | Review process                                                                     | Gradual opening                                                                                                                                                          | Release data                       | Official guids                                                                                                                   |
-|-------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Google      | [Link](https://developers.google.com/workspace/marketplace/about-app-review)       | [yes](https://support.google.com/googleplay/android-developer/answer/6346149?visit_id=638228478821573509-2375162816&rd=1#zippy=) - target direct percent and countries   | The richest data from your release | [Release](https://play.google.com/console/about/guides/releasewithconfidence/), [Quality](https://developer.android.com/quality) |
-| Apple store | [Link](https://developer.apple.com/app-store/review/)                              | [yes](https://developer.apple.com/help/app-store-connect/update-your-app/release-a-version-update-in-phases)  - for 7 days , not direct percent  and no target countries | Essential overview data            | [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)                                          |
+| App store   | Review process                                                                     | Gradual opening                                                                                                                                                          | Guidelines                                                                                                                       |
+|-------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Google      | [Link](https://developers.google.com/workspace/marketplace/about-app-review)       | [yes](https://support.google.com/googleplay/android-developer/answer/6346149?visit_id=638228478821573509-2375162816&rd=1#zippy=) - target direct percent and countries   | [Release](https://play.google.com/console/about/guides/releasewithconfidence/), [Quality](https://developer.android.com/quality) |
+| Apple store | [Link](https://developer.apple.com/app-store/review/)                              | [yes](https://developer.apple.com/help/app-store-connect/update-your-app/release-a-version-update-in-phases)  - for 7 days , not direct percent  and no target countries | [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)                                          |
 
 >Gradual release is Phased release for AppStore and Stage release for Google
 
@@ -126,8 +131,11 @@ Also from my point of view Google Developer Console give you amazing capabilitie
 ![](./Low_risked_release2.png)
 
 > The main difference you start opening for all countries. Your release changes are low platform depended and it means you can make right decisions with high chances of true about the version stability based on Google metrics.
+
 > To have reliable analytics I personally prefer to start release for all world countries, but from less percent. 
+
 > If you do not have custom real time dashboards and configured alerts on bad metrics threshold it is better to start roll out from lower target %. That will give you more time for reaction.
+
 > Timeline should be adjusted to your DAU and level accepting risks.
 
 
@@ -145,7 +153,7 @@ Otherwise you need to resubmit of client with new app version code to be accepte
 and you could not decrease impact of an issue immediately by a remote option it makes sense to save time as much as possible.
 
 ## About preparing the release candidate before sending it to review:
-make final smoke QA check before opening of the app on builds downloaded from stores(testflight , not distributed as a bundle or apk. Because some game functionality can be triggered only from store builds.
+Make final smoke QA check before opening of the app on builds downloaded from stores(testflight , not distributed as a bundle or apk. Because some game functionality can be triggered only from store builds.
 Like google referer api otherwise you can miss the technical issues and be frustrated in production with real players. 
 
 ## One more thing where you have to be in touch with store changes to avoid unxpected troubles during app review:
@@ -157,14 +165,14 @@ Like google referer api otherwise you can miss the technical issues and be frust
 I recommend to separate technical and non technical changes into different releases to avoid mixing a lot of changes for big period of development into one release.
 If you will see bad results in your tracked KPI for a new release it would be definitely hard to find a root cause. Is it an issue with new reskined UI or there a technical issue with pushes that freeze devices?
 
-## Every new release wil not degrade KPI's
+## Every new release will not degrade KPI's goal
 That is ambitious goal.
 Accumulative effect of changes for few releases at line will make impossible to detect a right root cause of degradation some metric.
 And from my experience that is easier to break something and spend to much time to compensate the metric by future fixes and changes next.
 
 ## Features to take a look
 [Google Custom store listings](https://support.google.com/googleplay/android-developer/answer/9867158?visit_id=638228524369380759-314294836&rd=1)
-
+[Custom product pages](https://developer.apple.com/app-store/custom-product-pages/)
 [Unity Distribution Portal](https://unity.com/products/unity-distribution-portal)
 - An estimated 1.7 billion mobile gamers will be using alternative app stores by 2023.
 - Around $5 billion dollars of revenue will be generated in stores outside of China.
@@ -173,7 +181,7 @@ And from my experience that is easier to break something and spend to much time 
 
 # In Conclusion
 
-The store rollout is a big deal in the release process. 
+The store rollouts is the important step in the release process. 
 Until your version is available on all platforms, it's still a work in progress. 
 Rollout strategies help reduce risks with new changes and prevent losing your most important product audience.
 A right rollout strategy also makes it easy to add new app stores like Samsung Galaxy Store, Amazon, or Huawei AppGallery.
